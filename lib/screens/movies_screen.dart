@@ -14,7 +14,11 @@ class _MoviesScreenState extends State<MoviesScreen> {
   @override
   void initState() {
     super.initState();
-    BlocProvider.of<MoviesCubit>(context).fetchMovies();
+    fetchMovie();
+  }
+
+  Future<void> fetchMovie() async {
+    await BlocProvider.of<MoviesCubit>(context).fetchMovies();
   }
 
   @override
