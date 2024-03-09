@@ -2,7 +2,7 @@ import 'package:bloc_state_management_tutorial/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cubits/login_cubit.dart';
+import 'cubits/login_cubit/login_cubit.dart';
 import 'cubits/movies_cubit/movies_cubit.dart';
 import 'cubits/task_cubit/task_cubit.dart';
 

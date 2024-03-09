@@ -1,4 +1,4 @@
-import 'package:bloc_state_management_tutorial/cubits/login_cubit.dart';
+import 'package:bloc_state_management_tutorial/cubits/login_cubit/login_cubit.dart';
 import 'package:bloc_state_management_tutorial/screens/movies_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
