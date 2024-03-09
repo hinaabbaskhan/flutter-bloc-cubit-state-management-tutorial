@@ -23,5 +23,21 @@ class NetworkHelper {
     }
   }
 
-  Future<dynamic> postData() async {}
+  Future<dynamic> postData({Map<String, dynamic>? body}) async {
+    try {
+      final http.Response response = await http.post(
+        Uri.parse(url),
+        body: body,
+      );
+      if (response.statusCode == 200) {
+        return jsonDecode(response.body);
+      } else {
+        print('API request failed');
+        throw Exception('API request failed');
+      }
+    } catch (e) {
+      print('API request failed');
+      throw Exception(e);
+    }
+  }
 }
